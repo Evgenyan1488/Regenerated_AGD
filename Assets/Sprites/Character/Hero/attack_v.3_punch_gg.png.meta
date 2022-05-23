@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 544771bf599165b4d9b385aee4dffcf3
+guid: 0f776e0c649602d4188071dc01fe06c8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 948881501409208427
-    second: attack_punch_gg_0
+      213: 2830627256192585816
+    second: attack_v.3_punch_gg_0
   - first:
-      213: -3557601679621701929
-    second: attack_punch_gg_1
+      213: 7634945250449638101
+    second: attack_v.3_punch_gg_1
   - first:
-      213: -2820167400256596450
-    second: attack_punch_gg_2
+      213: -4227218896072839147
+    second: attack_v.3_punch_gg_2
   - first:
-      213: 3129752133318806704
-    second: attack_punch_gg_3
+      213: 1137065360361073662
+    second: attack_v.3_punch_gg_3
   - first:
-      213: -6165877807871987422
-    second: attack_punch_gg_4
+      213: -788039147304595635
+    second: attack_v.3_punch_gg_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,12 +106,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: attack_punch_gg_0
+      name: attack_v.3_punch_gg_0
       rect:
         serializedVersion: 2
         x: 25
-        y: 7
-        width: 20
+        y: 8
+        width: 12
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -120,82 +120,82 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b686f69b2ba1b2d00800000000000000
-      internalID: 948881501409208427
+      spriteID: 850d5e00e78684720800000000000000
+      internalID: 2830627256192585816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_punch_gg_1
+      name: attack_v.3_punch_gg_1
       rect:
         serializedVersion: 2
         x: 87
-        y: 7
-        width: 20
+        y: 8
+        width: 15
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.54678446, y: 0.5212652}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7deb0d11f1cd0aec0800000000000000
-      internalID: -3557601679621701929
+      spriteID: 5d24b9ce046c4f960800000000000000
+      internalID: 7634945250449638101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_punch_gg_2
+      name: attack_v.3_punch_gg_2
       rect:
         serializedVersion: 2
         x: 153
-        y: 6
-        width: 20
+        y: 7
+        width: 12
         height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.54068124}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e16919cf0b0ccd8d0800000000000000
-      internalID: -2820167400256596450
+      spriteID: 51072cf8fc6e555c0800000000000000
+      internalID: -4227218896072839147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_punch_gg_3
+      name: attack_v.3_punch_gg_3
       rect:
         serializedVersion: 2
-        x: 217
-        y: 6
-        width: 20
+        x: 214
+        y: 7
+        width: 26
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.23909232, y: 0.53189796}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bc0d7dabfc1f6b20800000000000000
-      internalID: 3129752133318806704
+      spriteID: efb29babbeaa7cf00800000000000000
+      internalID: 1137065360361073662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_punch_gg_4
+      name: attack_v.3_punch_gg_4
       rect:
         serializedVersion: 2
         x: 281
-        y: 7
-        width: 20
+        y: 8
+        width: 12
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -204,8 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 221735d4dc66e6aa0800000000000000
-      internalID: -6165877807871987422
+      spriteID: d4fcecb12925015f0800000000000000
+      internalID: -788039147304595635
       vertices: []
       indices: 
       edges: []
