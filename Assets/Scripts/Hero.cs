@@ -44,9 +44,14 @@ public class Hero : Entity
 
     void Update()
     {
-        Vector3 dif = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float rotZ = Mathf.Atan2(dif.y, dif.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, rotZ);
+        
+        Vector3 dif;
+        float rotZ;
+
+        dif = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        rotZ = Mathf.Atan2(dif.y, dif.x) * Mathf.Rad2Deg;
+        if (Time.timeScale > 0)
+            transform.rotation = Quaternion.Euler(0f, 0f, rotZ);
 
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
@@ -69,22 +74,24 @@ public class Hero : Entity
 
         if (weapon.curreloadtime > 0)
             weapon.curreloadtime -= Time.deltaTime;
-
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Time.timeScale > 0)
         {
-            if (weapon.curreloadtime <= 0)
+            if (Input.GetKey(KeyCode.Mouse0))
             {
-                weapon.AttackStart();
-                StartCoroutine(WaitForAtc(weapon.attackspeed - 0.005f));
+                if (weapon.curreloadtime <= 0)
+                {
+                    weapon.AttackStart();
+                    StartCoroutine(WaitForAtc(weapon.attackspeed - 0.005f));
+                }
             }
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            weapon = new Club(1, 0.5f, attackrange, enemy, punchpoint);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            weapon = new Gun(0.4f, bullet, shotPoint, mytransform);
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                weapon = new Club(1, 0.5f, attackrange, enemy, punchpoint);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                weapon = new Gun(0.4f, bullet, shotPoint, mytransform);
+            }
         }
     }
 
